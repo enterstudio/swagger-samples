@@ -117,7 +117,7 @@
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
-            <version>4.0</version>
+            <version>5.0.0</version>
             <exclusions>
                 <exclusion>
                     <groupId>javax.inject</groupId>
@@ -159,10 +159,8 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>io.swagger.samples.inflector.dropwizard.InflectorServer</mainClass>
                                 </transformer>
                             </transformers>
