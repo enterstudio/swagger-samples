@@ -104,7 +104,7 @@
     <dependency>
       <groupId>org.mule.modules</groupId>
       <artifactId>mule-module-jersey</artifactId>
-      <version>3.4.0</version>
+      <version>3.8.0</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
