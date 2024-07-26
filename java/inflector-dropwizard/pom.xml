@@ -25,9 +25,9 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
-        <dropwizard-version>0.8.2</dropwizard-version>
+        <dropwizard-version>3.0.1</dropwizard-version>
         <inflector-version>1.0.2</inflector-version>
-        <jackson.version>2.5.1</jackson.version>
+        <jackson.version>2.15.0</jackson.version>
     </properties>
 
     <dependencies>
@@ -114,10 +114,8 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <mainClass>io.swagger.samples.inflector.dropwizard.InflectorServer</mainClass>
                                 </transformer>
                             </transformers>
